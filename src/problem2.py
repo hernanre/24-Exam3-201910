@@ -2,13 +2,13 @@
 Exam 3, problem 2.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.  October 2018.
+         their colleagues and Ricardo Hernandez.  October 2018.
 
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import time
 import testing_helper
-
+import math
 
 def main():
     """ Calls the   TEST   functions in this module. """
@@ -89,8 +89,15 @@ def problem2(sequence):
     Type hints:
       :type sequence [list]
     """
+    start = sequence[0]
+    index = 0
+    for k in range(1, len(sequence)):
+        if math.sqrt(sequence[k] ** 2) > math.sqrt(start ** 2):
+            start = sequence[k]
+            index = k
+    return index
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
 

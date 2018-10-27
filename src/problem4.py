@@ -76,14 +76,24 @@ And this one for n=14:
 
     :type n: int
     """
+    for k in range(n):
+        for j in range(1, n-k):
+            print(" ", end='')
+        for q in range((k+1)):
+                if q < (q + k):
+                    print(q + 1, end='')
+        for x in range(2, n+1):
+            print("*", end='')
+
+
+        print()
     # ------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #          Some tests are already written for you (above).
     ####################################################################
     # IMPORTANT: In your final solution for this problem,
     #   you must NOT use string multiplication.
     ####################################################################
-
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.

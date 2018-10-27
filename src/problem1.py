@@ -85,6 +85,13 @@ def problem1(numbers):
     Type hints:
       :type numbers:  [int]
     """
+    start = len(numbers)//3
+    end = 2 * start
+    total = 0
+    for k in range(start, end):
+        total = total + numbers[k]
+    return total
+
     # -------------------------------------------------------------------------
     # TODO: 2. Implement and test this function.
     #          Tests have been written for you (above).

@@ -212,8 +212,17 @@ def problem5(x):
     Type hints:
       :type x:    int
     """
+    start = 0
+    while True:
+        r = x + start
+        if is_prime(r):
+            if is_prime(sum_of_digits(r)) == True:
+                return r
+        start = start + 1
+
+
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
 
