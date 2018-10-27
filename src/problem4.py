@@ -87,8 +87,12 @@ And this one for n=14:
         print(" ", end='')
         for s in range(k + 2):
             print("*", end='')
-        for r in range (n - k, -1, -1 ):
-            
+        print(" ", end='')
+        for r in range (n - (k+1) + 1, 0,  -1):
+            if r > 9:
+                print(r-10, end='')
+            else:
+                print(r, end='')
 
         print()
     # ------------------------------------------------------------------
