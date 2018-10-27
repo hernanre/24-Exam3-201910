@@ -80,11 +80,15 @@ And this one for n=14:
         for j in range(1, n-k):
             print(" ", end='')
         for q in range((k+1)):
-                if q < (q + k):
-                    print(q + 1, end='')
-        for x in range(2, n+1):
+                if q+1 > 9:
+                    print(q+1-10, end="")
+                else:
+                    print(q+1, end="")
+        print(" ", end='')
+        for s in range(k + 2):
             print("*", end='')
-
+        for r in range (n - k, -1, -1 ):
+            
 
         print()
     # ------------------------------------------------------------------
