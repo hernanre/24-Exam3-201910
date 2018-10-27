@@ -2,8 +2,8 @@
 Exam 3, problem 4.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, their colleagues,
-         and PUT_YOUR_NAME_HERE.  October, 2018.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Ricardo Hernandez.  October, 2018.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
@@ -88,7 +88,7 @@ And this one for n=14:
         for s in range(k + 2):
             print("*", end='')
         print(" ", end='')
-        for r in range (n - (k+1) + 1, 0,  -1):
+        for r in range(n - (k+1) + 1, 0,  -1):
             if r > 9:
                 print(r-10, end='')
             else:
@@ -96,7 +96,7 @@ And this one for n=14:
 
         print()
 
-        
+
     # ------------------------------------------------------------------
     # DONE: 2. Implement and test this function.
     #          Some tests are already written for you (above).
