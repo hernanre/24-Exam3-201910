@@ -95,6 +95,8 @@ And this one for n=14:
                 print(r, end='')
 
         print()
+
+        
     # ------------------------------------------------------------------
     # DONE: 2. Implement and test this function.
     #          Some tests are already written for you (above).
